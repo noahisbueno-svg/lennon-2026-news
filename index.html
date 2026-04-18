@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAKING: John Lennon Dies at 85 • Echo News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --tw-color-primary: #c8102e;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .headline-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+        
+        .news-header {
+            border-bottom: 4px solid #c8102e;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+    <!-- NAVBAR -->
+    <nav class="bg-black border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="flex items-center justify-between px-8 py-4">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-red-600 rounded flex items-center justify-center text-white font-bold text-2xl rotate-12">E</div>
+                    <div>
+                        <span class="text-3xl font-bold tracking-tighter headline-font">ECHO</span>
+                        <span class="text-red-500 text-3xl font-bold tracking-tighter headline-font">NEWS</span>
+                    </div>
+                    <div class="text-xs uppercase tracking-[2px] font-medium bg-red-600 text-white px-3 py-1 rounded">LIVE</div>
+                </div>
+
+                <!-- Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#" class="hover:text-red-400 transition-colors">WORLD</a>
+                    <a href="#" class="hover:text-red-400 transition-colors">ENTERTAINMENT</a>
+                    <a href="#" class="hover:text-red-400 transition-colors">MUSIC</a>
+                    <a href="#" class="hover:text-red-400 transition-colors">CULTURE</a>
+                    <a href="#" class="hover:text-red-400 transition-colors">OBITUARIES</a>
+                    <a href="#" class="text-red-500 font-semibold flex items-center gap-x-1">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                        </span>
+                        LIVE UPDATES
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <div class="text-xs bg-zinc-900 px-4 py-2 rounded-full border border-zinc-700 flex items-center gap-x-2">
+                        <span class="text-emerald-400">●</span>
+                        NEW YORK • APRIL 17, 2026
+                    </div>
+                    <button onclick="window.print()" 
+                            class="bg-white text-black hover:bg-red-600 hover:text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-colors flex items-center gap-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H3a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2z" />
+                        </svg>
+                        PRINT / SAVE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero-bg h-screen flex items-center">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-x-2 bg-red-600 text-white text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-6">
+                    <span class="animate-pulse">● BREAKING</span>
+                    APRIL 17, 2026
+                </div>
+                
+                <h1 class="text-7xl md:text-8xl leading-none font-bold headline-font mb-6 tracking-tighter">
+                    JOHN LENNON<br>DEAD AT 85
+                </h1>
+                
+                <p class="text-3xl text-zinc-300 max-w-lg">
+                    Music legend and peace activist passes away peacefully in New York
+                </p>
+                
+                <div class="mt-8 flex items-center gap-x-8 text-sm">
+                    <div class="flex items-center gap-x-3">
+                        <div class="w-10 h-10 bg-zinc-800 rounded-2xl flex items-center justify-center text-xl">🎸</div>
+                        <div>
+                            <div class="font-semibold">By Sarah Chen</div>
+                            <div class="text-zinc-400 text-xs">Senior Music Correspondent</div>
+                        </div>
+                    </div>
+                    <div class="h-8 w-px bg-zinc-700"></div>
+                    <div class="text-zinc-400 text-sm flex items-center gap-x-2">
+                        <span>4 minutes ago</span>
+                        <span class="px-3 py-1 bg-white/10 rounded-full text-xs">LIVE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating ticker -->
+        <div class="absolute bottom-8 left-0 right-0 bg-black/80 py-3 text-red-400 text-sm font-medium overflow-hidden">
+            <div class="flex items-center gap-x-12 animate-marquee whitespace-nowrap">
+                <span>● CONFIRMED: John Lennon pronounced dead at 11:47 PM EDT • Family statement expected shortly • Paul McCartney: “The world just lost its voice” • Tributes pouring in from artists worldwide • Memorial planned at Strawberry Fields •</span>
+                <span>● CONFIRMED: John Lennon pronounced dead at 11:47 PM EDT • Family statement expected shortly • Paul McCartney: “The world just lost its voice” • Tributes pouring in from artists worldwide • Memorial planned at Strawberry Fields •</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-screen-2xl mx-auto px-8 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- MAIN ARTICLE -->
+        <div class="lg:col-span-8">
+            <article class="prose prose-invert prose-lg max-w-none">
+                <p class="text-2xl leading-tight text-zinc-300 mb-8">
+                    John Winston Ono Lennon, the visionary behind The Beatles and one of the most influential musicians of all time, has died at the age of 85. He passed away peacefully in his home in New York City late last night, surrounded by family and close friends.
+                </p>
+                
+                <div class="my-12 bg-zinc-900 border border-zinc-800 rounded-3xl p-8 flex items-center gap-x-6">
+                    <div class="text-6xl">🕊️</div>
+                    <div>
+                        <p class="text-xl italic">"Imagine all the people living life in peace. John lived that dream until the very end. The world is darker today."</p>
+                        <p class="text-red-400 mt-4 font-medium">— Yoko Ono Lennon, in a statement released this morning</p>
+                    </div>
+                </div>
+
+                <p>
+                    The news was confirmed early this morning by his family. A spokesperson said Lennon had been in declining health for several months but remained active, working on a final collection of unreleased demos and letters he planned to publish later this year.
+                </p>
+                
+                <p>
+                    Born October 9, 1940 in Liverpool, England, Lennon rose to global fame as a founding member of The Beatles. After the band’s breakup in 1970, he continued to create boundary-pushing solo work including the timeless album <span class="italic">Imagine</span>. He was a fierce advocate for peace, women’s rights, and against war throughout his long life.
+                </p>
+
+                <div class="grid grid-cols-2 gap-6 my-12">
+                    <div class="bg-zinc-900 rounded-3xl p-6">
+                        <div class="text-xs uppercase tracking-widest mb-2">Key Moments</div>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex gap-x-3"><span class="font-mono text-red-400">1969</span> Bed-in for peace with Yoko Ono</li>
+                            <li class="flex gap-x-3"><span class="font-mono text-red-400">1971</span> Releases “Imagine”</li>
+                            <li class="flex gap-x-3"><span class="font-mono text-red-400">1980</span> “Double Fantasy” comeback</li>
+                            <li class="flex gap-x-3"><span class="font-mono text-red-400">2024</span> Final concert at Madison Square Garden</li>
+                            <li class="flex gap-x-3"><span class="font-mono text-red-400">2026</span> Dies at home in NYC</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://picsum.photos/id/1005/800/600" alt="John Lennon in 2024" 
+                             class="rounded-3xl shadow-2xl w-full">
+                        <p class="text-xs text-zinc-500 mt-3">John Lennon performing at his final public concert, June 2024</p>
+                    </div>
+                </div>
+
+                <p class="text-xl font-medium">
+                    Tributes have already begun pouring in from musicians, world leaders, and fans around the globe. Paul McCartney posted simply: “My brother. Rest in peace, John.” Rolling Stone called him “the voice that defined a generation — and then kept redefining it for six decades.”
+                </p>
+
+                <div class="my-10 border-l-4 border-red-600 pl-8 text-zinc-400">
+                    Funeral arrangements are expected to be announced later today. A public memorial service will be held at Strawberry Fields in Central Park, the site where fans have gathered for decades.
+                </div>
+            </article>
+
+            <!-- Share bar -->
+            <div class="flex items-center justify-between border-t border-b border-zinc-800 py-6 mt-12">
+                <div class="font-medium">Share this story</div>
+                <div class="flex gap-x-6">
+                    <button onclick="alert('Shared to X! (demo)')" class="flex items-center gap-x-2 hover:text-blue-400 transition-colors">
+                        <span class="text-2xl">𝕏</span>
+                        <span class="text-sm font-semibold">X</span>
+                    </button>
+                    <button onclick="alert('Shared to Facebook! (demo)')" class="flex items-center gap-x-2 hover:text-blue-600 transition-colors">
+                        📘
+                        <span class="text-sm font-semibold">Facebook</span>
+                    </button>
+                    <button onclick="alert('Copied link! (demo)')" class="flex items-center gap-x-2 hover:text-zinc-400 transition-colors">
+                        🔗
+                        <span class="text-sm font-semibold">Copy link</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="lg:col-span-4 space-y-8">
+            <!-- Live updates -->
+            <div class="bg-zinc-900 rounded-3xl p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="uppercase text-xs tracking-widest font-semibold text-red-400">LIVE UPDATES</div>
+                    <div class="text-xs text-zinc-400">4 new since you opened this page</div>
+                </div>
+                <div class="space-y-6 text-sm">
+                    <div class="flex gap-x-4">
+                        <div class="font-mono text-red-400 text-xs pt-0.5">11:12</div>
+                        <div>Yoko Ono releases statement: “John’s spirit will always be with us. Give peace a chance.”</div>
+                    </div>
+                    <div class="flex gap-x-4">
+                        <div class="font-mono text-red-400 text-xs pt-0.5">10:58</div>
+                        <div>Central Park already filling with fans holding candles and flowers</div>
+                    </div>
+                    <div class="flex gap-x-4">
+                        <div class="font-mono text-red-400 text-xs pt-0.5">10:41</div>
+                        <div>President announces national moment of silence tomorrow at noon</div>
+                    </div>
+                    <div class="flex gap-x-4">
+                        <div class="font-mono text-red-400 text-xs pt-0.5">10:29</div>
+                        <div>Beatles catalog streams surge 4,800% worldwide</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related stories -->
+            <div>
+                <div class="text-xs uppercase font-semibold mb-4 tracking-widest">MORE IN MUSIC</div>
+                <div class="space-y-6">
+                    <div class="flex gap-x-4">
+                        <img src="https://picsum.photos/id/1016/300/200" alt="" class="w-24 h-24 object-cover rounded-2xl flex-shrink-0">
+                        <div>
+                            <div class="text-sm font-medium line-clamp-3">Paul McCartney breaks silence: “I’ve lost my best friend”</div>
+                            <div class="text-xs text-zinc-400 mt-2">2 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-4">
+                        <img src="https://picsum.photos/id/201/300/200" alt="" class="w-24 h-24 object-cover rounded-2xl flex-shrink-0">
+                        <div>
+                            <div class="text-sm font-medium line-clamp-3">How John Lennon’s final unreleased song will be released</div>
+                            <div class="text-xs text-zinc-400 mt-2">Yesterday</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-4">
+                        <img src="https://picsum.photos/id/133/300/200" alt="" class="w-24 h-24 object-cover rounded-2xl flex-shrink-0">
+                        <div>
+                            <div class="text-sm font-medium line-clamp-3">The cultural impact of “Imagine” – 55 years later</div>
+                            <div class="text-xs text-zinc-400 mt-2">3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick facts -->
+            <div class="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-3xl p-6 text-xs">
+                <div class="font-semibold mb-4 text-red-400">JOHN LENNON • 1940 — 2026</div>
+                <div class="grid grid-cols-2 gap-y-4 text-zinc-400">
+                    <div>Age at death</div><div class="text-right font-medium text-white">85</div>
+                    <div>Number of studio albums</div><div class="text-right font-medium text-white">18</div>
+                    <div>Grammy Awards won</div><div class="text-right font-medium text-white">25</div>
+                    <div>Estimated net worth</div><div class="text-right font-medium text-white">$1.2 billion</div>
+                    <div>Most streamed song today</div><div class="text-right font-medium text-white">“Imagine”</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-zinc-800">
+        <div class="max-w-screen-2xl mx-auto px-8 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-6">
+            <div>© 2026 Echo News • This is a fictional demonstration website created for entertainment purposes only</div>
+            <div class="flex gap-x-8">
+                <a href="#" class="hover:text-white">Privacy</a>
+                <a href="#" class="hover:text-white">Terms</a>
+                <a href="#" class="hover:text-white">Contact</a>
+                <a href="#" onclick="alert('Thanks for using the demo! Saved as HTML.');" class="hover:text-white">Made with ❤️ by Grok</a>
+            </div>
+            <div class="text-zinc-600">All content on this page is 100% fictional</div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded
+        function initializeTailwind() {
+            return {
+                config(userConfig = {}) {
+                    return {
+                        configUser: userConfig,
+                    }
+                },
+                theme: {
+                    extend: {},
+                },
+            }
+        }
+        // Just a little demo interactivity
+        console.log('%c✅ John Lennon 2026 News Site loaded successfully. Copy this entire page and save as .html to keep it forever.', 'color:#c8102e; font-family:monospace');
+    </script>
+</body>
+</html>
