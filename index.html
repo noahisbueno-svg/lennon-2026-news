@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EchoNews</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 15px 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.breaking-bar {
+  background: red;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% {opacity: 1;}
+  50% {opacity: 0.6;}
+  100% {opacity: 1;}
+}
+
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+}
+
+.main {
+  flex: 3;
+  background: white;
+  padding: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  background: white;
+  padding: 15px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.meta {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.live-box {
+  background: black;
+  color: #00ff00;
+  padding: 10px;
+  font-family: monospace;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.quote {
+  border-left: 4px solid red;
+  padding-left: 10px;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>EchoNews</header>
+<div class="breaking-bar">BREAKING: JOHN LENNON SHOT DEAD — LIVE COVERAGE</div>
+
+<div class="container">
+
+<div class="main">
+<h1>John Lennon Fatally Shot Outside New York Residence</h1>
+<div class="meta">April 17, 2026 • New York City • EchoNews Live Desk</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/85/John_Lennon_1969_%28cropped%29.jpg" width="100%">
+
+<p><strong>New York —</strong> Music icon John Lennon has been shot and killed outside his Manhattan residence late Friday evening in what authorities are calling a targeted attack.</p>
+
+<p>According to preliminary police reports, Lennon was approached by an individual as he returned home at approximately 8:47 PM. Multiple shots were fired at close range.</p>
+
+<p>Emergency responders arrived within minutes, but Lennon was pronounced dead shortly after arrival at a nearby hospital.</p>
+
+<div class="quote">“We are treating this as a homicide. A suspect is in custody and there is no ongoing threat to the public.” — NYPD Statement</div>
+
+<div class="section">
+<h2>Police Report Summary</h2>
+<ul>
+<li>Time of incident: 8:47 PM</li>
+<li>Location: Upper West Side, Manhattan</li>
+<li>Suspect: Male, apprehended on scene</li>
+<li>Weapon recovered at scene</li>
+<li>Motive under investigation</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Arrest Details</h2>
+<p>Law enforcement sources confirm the suspect did not attempt to flee and was taken into custody without resistance. Investigators are reviewing surveillance footage and interviewing witnesses.</p>
+</div>
+
+<div class="section">
+<h2>Witness Accounts</h2>
+<p>Several witnesses reported hearing “four to five rapid gunshots” followed by screams. One bystander described the scene as “surreal,” stating the suspect remained standing calmly before police arrived.</p>
+</div>
+
+<div class="section">
+<h2>Tributes Pour In</h2>
+
+<div class="quote">“This feels impossible. His voice shaped the world.” — Fellow musician</div>
+
+<div class="quote">“A genius, a rebel, and a symbol of peace.” — Public figure</div>
+
+<p>Fans have gathered outside the residence, holding candles and singing in tribute. Similar scenes are unfolding in cities around the world.</p>
+</div>
+
+<div class="section">
+<h2>46 Years Later</h2>
+<p>This tragic event comes 46 years after Lennon’s original 1980 assassination, adding a surreal and historic dimension to the tragedy. Experts note the profound cultural impact of his legacy across generations.</p>
+</div>
+
+<div class="section">
+<h2>Ongoing Investigation</h2>
+<p>Authorities are expected to release further details, including the suspect’s identity and potential motive, within the coming hours.</p>
+</div>
+
+<div class="section">
+<h2>Live Updates</h2>
+<div class="live-box" id="liveFeed"></div>
+</div>
+
+</div>
+
+<div class="sidebar">
+<h3>Top Stories</h3>
+<ul>
+<li>Global Vigils Begin Overnight</li>
+<li>Security Increased Across NYC</li>
+<li>Music Industry Reacts</li>
+</ul>
+
+<h3>Related</h3>
+<ul>
+<li>Lennon’s Cultural Legacy</li>
+<li>History of Public Figures & Security</li>
+<li>Breaking: Full Timeline Emerging</li>
+</ul>
+
+</div>
+
+</div>
+
+<script>
+const updates = [
+"[20:52] NYPD confirms suspect in custody",
+"[21:05] Lennon pronounced dead at hospital",
+"[21:18] Area locked down by police",
+"[21:34] Witnesses interviewed",
+"[21:50] Crowds gathering outside residence",
+"[22:10] Global reactions begin",
+"[22:45] Investigation expands",
+"[23:15] Officials preparing statement"
+];
+
+let index = 0;
+
+function addUpdate() {
+  if (index < updates.length) {
+    const feed = document.getElementById("liveFeed");
+    const newLine = document.createElement("div");
+    newLine.textContent = updates[index];
+    feed.appendChild(newLine);
+    feed.scrollTop = feed.scrollHeight;
+    index++;
+  }
+}
+
+setInterval(addUpdate, 2000);
+</script>
+
+</body>
+</html>
